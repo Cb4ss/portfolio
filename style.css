@@ -1,0 +1,574 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    font-family: Arial, Sans-Serif
+}
+
+/*heder +
+barra menu*/
+
+
+.header{
+    margin: 0 auto;
+    padding: 0;
+    height: 300px;
+    width: 100%;
+    background-image: url(img/shadow.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*logo*/
+
+
+img.logo{
+    padding: 0 0 0 0;
+    margin: 10%;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*menubar*/
+
+.header ul{
+    width: 50%;
+    padding:0;
+    margin-right: 30px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header ul li{ 
+    list-style: none;
+    line-height: 3;
+    flex: auto;
+    flex-wrap: wrap;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.header ul li a {
+
+    text-decoration: none;
+    color: #eee;
+    border-radius: 10px;
+    flex: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.header ul li a:hover {
+    background-color: rgba(159,237,215,0.2);
+
+}
+
+/*section skills*/
+
+section.feats{
+    background-color: rgb(32,32,32);
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.section-item{
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: rgba(0,0,0,0.8);
+    background-color: rgba(255,250,240,0.7);
+    height: 250px;
+    width: 200px;
+    margin-left: 25px;
+    padding: 0.5em;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.welcome{
+    padding: 0 0 30px 0;
+    text-shadow: 3px 3px 2px #696;
+    color: #E0E0E0;
+}
+
+
+/*=======IMG HOME=========*/
+
+main.img-home{
+    background-color: rgb(0,0,0);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 600px;    
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1.welcome{
+    color: #fff;
+}
+
+div.ventajas{
+    width: 100%;
+    height: 50px;
+    background-color: #990000;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.ventajas h2{
+    color: #fff;   
+}
+/*========Flecha indicadora=========*/
+
+.arrow_box {
+    position: relative;
+    background: #990000;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow_box:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(153, 0, 0, 0);
+    border-top-color: #990000;
+    border-width: 30px;
+    margin-left: -30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*========fin flecha=========*/
+
+/*=====opacidad img ======*/
+.brighten img {
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.brighten img:hover {
+    -webkit-filter: brightness(100%);
+}
+
+/*===== FIN opacidad img ======*/
+
+
+
+/*========Galeria*=============*/
+
+main#maingallery {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 400px;
+    background-color: #808080;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+div.gallery { 
+    width: 50%;
+    
+    padding: .5vw;
+    font-size: 0;
+    flex-wrap: wrap;
+    flex-flow: row wrap;  
+    display: flex;
+}
+
+div.gallery div { 
+    flex: auto; 
+    width: 200px; 
+    margin: .5vw; 
+}
+
+div.gallery div img { 
+    width: 100%; 
+    height: auto; 
+}
+
+div.witness-container {
+    width: 100%;
+    height: 200px;
+    background-color: #990000;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.witness-titu{
+    
+    width: 40%;
+    height: 100px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.7);
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2.clientes{
+    color: #fff;
+}
+
+
+/*=========contacto==========*/
+#contacto{
+    
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #808080;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+div.social{
+    
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div.icon-social {
+
+    height: 200px;
+    margin: -1px 62px 0 0px;
+    padding: 0 0px 0 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.titucontacto{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+div.desc{
+
+    height: 200px;
+    margin: 65px 90px 0 -100px;
+    padding: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    line-height: 31px;
+    flex-wrap: wrap;
+}
+
+h2.titucontacto{
+
+    padding: 0 0 40px 0;
+}
+
+p.fs{
+    font-size: 15px;
+    padding: 0;
+    margin: 0 0 0 0;
+}
+
+fieldset {
+   border:0 none;
+}
+
+.formcontacto{
+    height: 400px;
+    margin: 0;
+    padding: 0 0 0 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/*========= about ==============*/
+
+div.about-container{
+
+    width: 100%;
+    height: 650px; 
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+article.about{
+    /*border: 2px solid red;*/
+    margin: 0 10px 0 0 ;
+    padding: 0 0 0 0;
+    width: 40%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+img.colo{
+    margin: 0 0 0 0 ;
+    padding: 0 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+p.about-color{
+    color: #fff;
+}
+
+h1.titu-about{
+
+    color: #000;
+    text-shadow: #555 2px 2px 3px;
+    font-size: 2em;
+}
+
+/*==========FOOTER============*/
+
+#footer {
+    background-image: url(img/patern.png);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.piemenu{
+    width: 10%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.piemenu ul li{
+    line-height: 1em;
+    margin: 0;
+    padding:0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.piemenu ul li a {
+    
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    text-decoration: none;
+    color: #eee;
+    flex: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+
+}
+
+div.piemenu p{
+    padding: 20px 0 10px 0;
+    color: red;
+}
+
+div.social-icons{
+    background-color: #fff;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media
+only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 720px) {
+
+    body{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .img{
+
+        padding: 0;
+        margin: 30%;
+    }
+
+    ul{
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     justify-content: flex-end;
+     width: 100%;
+     padding: 0;
+     margin: 0;   
+ }
+
+ div.gallery div { 
+    margin: 0; 
+}
+
+div.gallery { 
+    padding: 0; 
+}
+
+img.logo{
+    width: 100%;
+    padding: 0 0 0 0;
+    margin: 0;
+}
+
+}
+
+
+
+
+
